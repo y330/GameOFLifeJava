@@ -318,11 +318,8 @@ class Grid extends JPanel implements MouseListener {
         return row;
     }
 
-    private int getColumnClicked(MouseEvent e) {
-        int col = e.getY() / yside;
-        return col;
-    }
-}
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
 
 public class App {
 

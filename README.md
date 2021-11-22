@@ -2,4 +2,4 @@
 
 
 Preview:
-![Preview](/src/assets/images/conway.gif)
+![Preview](/src/assets/images/conways.gif)

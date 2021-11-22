@@ -1,4 +1,21 @@
-
+/** GridModel is an abstract class that defines the basic grid structure for
+ * the game.
+ *
+ * The grid is a 2D array of cells. Each cell has a state, which is either alive
+ * or dead.
+ *
+ * The grid is a rectangular grid, with a fixed number of rows and columns. The
+ * number of rows and columns are specified in the constructor. The grid is /* *
+ * initialized to all dead cells. The grid is not intended to be used directly,
+ * but rather through a subclass.
+ *
+ *
+ * @author YonahAviv
+ * @filename: GridModel.java
+ *
+ * Created at : 2021-11-18 12:00:42
+ * Last modified : 2021-11-18 12:07:00
+ */
 class GridModel {
 
 	/*
@@ -75,7 +92,7 @@ class GridModel {
 				case 4, 5, 6, 7, 8 -> newgrid[row][col] = false;
 				default -> System.out.println("GridModel: newGeneration: Error");
 				}
-				if (newgrid[row][col] && (row <= 0 || row >= width - 1 || col <= 0 ||col >= height - 1)) {
+				if (newgrid[row][col] && (row <= 0 || row >= width - 1 || col <= 0 || col >= height - 1)) {
 					int[] possibleEdgeCase = edgeTeleport(row, col);
 					int x2 = possibleEdgeCase[0];
 					int y2 = possibleEdgeCase[1];
